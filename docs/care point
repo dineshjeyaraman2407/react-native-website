@@ -1,0 +1,6 @@
+val response = healthConnectClient.readRecords(
+    ReadRecordsRequest(
+        recordType = StepsRecord::class,
+        timeRangeFilter = TimeRangeFilter.between(startTime, endTime)
+    )
+)
